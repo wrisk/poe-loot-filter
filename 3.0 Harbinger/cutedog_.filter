@@ -1,0 +1,630 @@
+#version for patch 3.0 - CuteDog_ version updated 8/25/2017 - not recommended for anyone
+
+
+#GARBINGER STUFF
+Hide
+	Class Currency
+	BaseType "Engineer's Shard" "Chaos Shard" "Regal Shard" "Binding Shard" "Horizon Shard"
+	SetFontSize 45
+	SetTextColor 255 45 175
+	SetBackgroundColor 34 34 51
+
+
+Show
+	Class Currency
+	BaseType "Harbinger's Shard" "Ancient Shard" "Engineer's Orb" "Orb of Horizons" "Orb of Binding" "Annulment Shard" "Harbinger's Orb" "Ancient Orb" "Orb of Annulment"
+	SetFontSize 45
+	SetTextColor 255 45 175
+	SetBackgroundColor 34 34 51
+	PlayAlertSound 2 70
+
+Show
+	Class Currency
+	BaseType "Exalted Shard"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 0 0 255
+
+
+Show
+	Class Fragment "Map Fragments"
+	BaseType "Divine Vessel"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 0 0 255
+	PlayAlertSound 8 110
+
+Show
+	Class Quest
+	SetFontSize 45
+	SetTextColor 74 230 58
+
+Show
+	Class "Pantheon Soul" Piece
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBackgroundColor 74 230 58 # T1 drops color / Quest items
+	PlayAlertSound 6 300
+
+Show
+  Class "Leaguestone"
+  SetBackgroundColor 34 34 51
+  SetBorderColor 170 204 255
+  SetTextColor 170 204 255
+  SetFontSize 45
+  PlayAlertSound 5 90
+
+Show
+  Class "Misc Map Items"
+  SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+  PlayAlertSound 6 300
+
+Show
+	LinkedSockets >= 6
+	SetFontSize 45
+	SetBackgroundColor 125 0 125 255
+	PlayAlertSound 6 300
+
+Show
+	Sockets >= 6
+	SetFontSize 45
+	SetBackgroundColor 34 34 51
+	SetTextColor 29 255 26
+	PlayAlertSound 4 170
+
+Hide
+	LinkedSockets >= 5
+	SetFontSize 42
+	SetBackgroundColor 125 125 125 255
+	#PlayAlertSound 4 50
+
+Show
+	Rarity = Unique
+	SetFontSize 45
+	SetTextColor 255 255 255
+	SetBorderColor 255 255 255
+	SetBackgroundColor 245 0 7
+	PlayAlertSound 8 150
+
+
+#DIV CARD TIERING
+#Bad div cards hide these all the time
+Hide
+	Class "Divination Card"
+	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Audacity" "Birth of the Three" "Call to the First Ones" "Cartographer's Delight" "Death" "Destined to Crumble" "Dying Anguish" "Her Mask" "Lantador's Lost Love" "Light and Truth" "Might is Right" "Prosperity" "Rain Tempter" "Struck by Lightning" "The Carrion Crow" "The Conduit" "The Demoness" "The Dragon" "The Drunken Aristocrat" "The Feast" "The Forsaken" "The Gentleman" "The Hermit" "The Incantation" "The Inoculated" "The Lich" "The Lion" "The Lord in Black" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Oath" "The Pack Leader" "The Pact" "The Rabid Rhoa" "The Scarred Meadow" "The Scholar" "The Sigil" "The Siren" "The Spoiled Prince" "The Sun" "The Surgeon" "The Visionary" "The Web" "The Wolf's Shadow" "Thunderous Skies" "Tranquillity" "Turn the Other Cheek"
+  SetBackgroundColor 34 34 51
+	SetTextColor 252 84 12
+	SetFontSize 40
+
+#ok ones that i will still pick up if they drop
+Show
+	Class "Divination Card"
+	BaseType "Atziri's Arsenal" "Blind Venture" "Boundless Realms" "Bowyer's Dream" "Chaotic Disposition" "Coveted Possession" "Dialla's Subjugation" "Doedre's Madness" "Earth Drinker" "Emperor of Purity" "Emperor's Luck" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Grave Knowledge" "Heterochromia" "Hope" "Hubris" "Humility" "Hunter's Resolve" "Jack in the Box" "Last Hope" "Lingering Remnants" "Lost Worlds" "Loyalty" "Luck of the Vaal" "Lucky Connections" "Lucky Deck" "Lysah's Respite" "Mawr Blaidd" "Merciless Armament" "Mitts" "Rain of Chaos" "Rats" "Scholar of the Seas" "Shard of Fate" "The Aesthete" "The Arena Champion" "The Artist" "The Avenger" "The Battle Born" "The Betrayal" "The Body" "The Brittle Emperor" "The Calling" "The Cartographer" "The Cataclysm" "The Catalyst" "The Celestial Justicar" "The Chains that Bind" "The Coming Storm" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Devastator" "The Doppelganger" "The Encroaching Darkness" "The Endurance" "The Enlightened" "The Ethereal" "The Explorer" "The Fletcher" "The Flora's Gift" "The Formless Sea" "The Fox" "The Gambler" "The Garish Power" "The Gemcutter" "The Gladiator" "The Harvester" "The Hoarder" "The Hunger" "The Inventor" "The Jester" "The Last One Standing" "The Mercenary" "The Offering" "The One With All" "The Opulent" "The Penitent" "The Poet" "The Polymath" "The Porcupine" "The Risk" "The Road to Power" "The Saint's Treasure" "The Scavenger" "The Sephirot" "The Soul" "The Spark and the Flame" "The Standoff" "The Stormcaller" "The Summoner" "The Surveyor" "The Survivalist" "The Thaumaturgist" "The Throne" "The Tower" "The Traitor" "The Trial" "The Twins" "The Tyrant" "The Union" "The Valkyrie" "The Valley of Steel Boxes" "The Vast" "The Void" "The Warden" "The Warlord" "The Watcher" "The Wind" "The Wolf" "The Wolven King's Bite" "The Wolverine" "The Wrath" "The Wretched" "Three Faces in the Dark" "Time-Lost Relic" "Treasure Hunter" "Vinia's Token" "Volatile Power" "Wealth and Power" "The Gambler" "The Encroaching Darkness"
+	SetFontSize 45
+	PlayAlertSound 8 140
+	SetBackgroundColor 34 34 51
+	SetTextColor 252 84 12
+
+#sicky gnar Div cards to show always and play JUICY sound
+Show
+	Class "Divination Card"
+	BaseType "The Doctor" "The Fiend" "Abandoned Wealth" "House of Mirrors" "Hunter's Reward" "The Dragon's Heart" "The Immortal" "The King's Heart" "Pride Before the Fall" "The Queen"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 220
+
+# This is in case i missed anything or new cards come out they will auto show
+Show
+	Class "Divination Card"
+ 	SetFontSize 45
+	PlayAlertSound 8 140
+	SetBackgroundColor 34 34 51
+	SetTextColor 252 84 12
+
+
+Show
+	BaseType "Talisman"
+	SetFontSize 44
+	SetBackgroundColor 34 34 51
+	SetTextColor 252 255 56
+
+Show
+	BaseType "Perandus Coin"
+	SetFontSize 42
+	SetTextColor 255 178 135 255
+	SetBorderColor 255 178 135 135
+	PlayAlertSound 3 80
+
+Hide
+	BaseType "Silver Coin"
+	SetFontSize 42
+	SetBackgroundColor 34 34 51
+	SetTextColor 252 255 56
+Show
+	Class Currency
+	BaseType "Prophecy"
+	SetFontSize 44
+	SetBackgroundColor 0 205 0 255
+	SetTextColor 255 255 255
+	PlayAlertSound 3 200
+Show
+	Class Currency
+	BaseType "Essence" "Remnant of Corruption" "Cartographer's Seal" "Unshaping Orb"
+	SetFontSize 43
+	SetBackgroundColor 34 34 51
+	SetTextColor 252 255 56
+	PlayAlertSound 3 135
+Show
+	BaseType "Shaper's Orb"
+	SetFontSize 45
+	SetBorderColor 255 255 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 9 100
+
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#currency
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Show
+	Class Stackable Currency
+	BaseType "Splinter of Chayula" "Splinter of Xoph" "Splinter of Uul-Netol" "Splinter of Tul" "Splinter of Esh"
+	SetFontSize 45
+	SetTextColor 200 101 246
+	SetBackgroundColor 34 34 51
+
+#Show
+Hide
+	Class Stackable Currency
+	SetFontSize 45
+	SetBackgroundColor 34 34 51
+	SetTextColor 196 168 204
+
+Show
+	Class Stackable Currency
+	BaseType "Blessing of Xoph" "Blessing of Tul" "Blessing of Esh" "Blessing of Uul-Netol" "Blessing of Chayula"
+	SetBackgroundColor 0 0 0 255
+	SetTextColor 255 0 255
+	SetBorderColor 255 0 255
+	SetFontSize 45
+	PlayAlertSound 5 200
+
+Show
+	Class Currency
+	BaseType "Exalted Orb" "Eternal Orb" "Mirror of Kalandra" "Mirror Shard" "Blessing of Chayula"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+
+Show
+	Class Currency
+	BaseType "Divine Orb" "Stacked Deck"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 0 0 255
+	PlayAlertSound 5 150
+
+Show
+    Class Currency
+    BaseType "Orb of Regret" "Vaal Orb" "Chaos Orb" "Regal Orb" "Gemcutter's Prism" "Cartographer's Sextant" "Orb of Alchemy" "Orb of Fusing" "Cartographer's Chisel" "Orb of Scouring" "Blessed Orb"
+    SetBackgroundColor 34 34 51
+    SetTextColor 29 255 26
+    SetFontSize 45
+    PlayAlertSound 5 120
+
+Show
+    BaseType "Orb of Chance"
+    SetBackgroundColor 34 34 51
+    SetTextColor 230 230 0
+    SetFontSize 44
+
+Hide
+#Show
+    BaseType "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Glassblower's Bauble"
+    SetFontSize 42
+    SetBorderColor 125 125 255
+
+
+Hide
+#Show
+    BaseType "Blacksmith's Whetstone" "Armourer's Scrap" "Orb of Transmutation" "Orb of Augmentation"
+    SetFontSize 40
+    SetBorderColor 125 125 255
+
+Hide
+#Show
+    BaseType "Portal Scroll"
+    SetFontSize 39
+Hide
+#Show
+    BaseType "Scroll of Wisdom"
+    SetFontSize 39
+
+
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#sort of maps
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Show
+	BaseType "Mortal Hope" "Sacrifice at Midnight" "Eber's Key" "Yriel's Key" "Inya's Key" "Volkuur's Key" "Offering to the Goddess"
+	SetFontSize 45
+	SetTextColor 0 0 0
+	SetBackgroundColor 255 100 100 255
+	PlayAlertSound 2 250
+Show
+	Class "Map Fragment"
+	SetFontSize 40
+	SetTextColor 255 102 255
+	SetBackgroundColor 153 255 255 255
+	PlayAlertSound 2 100
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#maps
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#show the shaped version first
+
+Show
+	Class Maps
+	BaseType "Shaped Overgrown Shrine Map"
+	SetFontSize 45
+	SetBorderColor 0 0 0
+	SetBackgroundColor 255 0 0
+	SetTextColor 0 0 0
+	PlayAlertSound 1 240
+
+#overgrown shrine is at top so that the shrine t14 map doesnt tag overgrown shrine as red.
+Hide
+	Class Maps
+	BaseType "Overgrown Shrine"
+	SetFontSize 45
+	SetBorderColor 0 0 0
+	SetBackgroundColor 255 255 0
+	SetTextColor 0 0 0
+
+#there is a red map called lair and this is to make sure spider lair is picked up first
+#Show
+Hide
+    Class Maps
+    BaseType "Spider Lair Map"
+    SetFontSize 45
+    SetBorderColor 0 0 0
+    SetBackgroundColor 255 255 255
+    SetTextColor 0 0 0
+
+#tier 11~16 REDS or good t10s
+Show
+	Class Maps
+	BaseType "Shaped Beach Map" "Shaped Canyon Map" "Shaped Armoury Map" "Shaped Quarry Map" "Shaped Racecourse Map" "Shaped Ramparts Map" "Shaped Spider Forest Map" "Shaped Strand Map" "Shaped Thicket Map" "Shaped Vaal City Map" "Shaped Wharf Map" "Bazaar Map" "Chateau Map" "Excavation Map" "Precinct Map" "Torture Chamber Map" "Underground Sea Map" "Wasteland Map" "Shaped Arachnid Tomb Map" "Shaped Castle Ruins Map" "Shaped Catacombs Map" "Shaped Cells Map" "Shaped Ashen Wood Map" "Shaped Mud Geyser Map" "Crematorium Map" "Estuary Map" "Necropolis Map" "Plateau Map" "Ivory Temple Map" "Residence Map" "Shipyard Map" "Vault Map" "Shaped Arachnid Nest Map" "Shaped Arena Map" "Shaped Bog Map" "Shaped Cemetery Map" "Shaped Barrows Map" "Shaped Atoll Map" "Shaped Pier Map" "Shaped Shore Map" "Shaped Tropical Island Map" "Lair Map" "Beacon Map" "Gorge Map" "High Gardens Map" "Plaza Map" "Scriptorium Map" "Sulphur Wastes Map" "Waterways Map" "Shaped Coves Map" "Shaped Crypt Map" "Shaped Museum Map" "Shaped Orchard Map" "Shaped Overgrown Shrine Map" "Shaped Promenade Map" "Shaped Reef Map" "Shaped Temple Map" "Maze Map" "Mineral Pools Map" "Palace Map" "Shrine Map" "Springs Map" "Volcano Map" "Shaped Colonnade Map" "Shaped Arsenal Map" "Shaped Courtyard Map" "Shaped Malformation Map" "Shaped Port Map" "Shaped Terrace Map" "Shaped Underground River Map" "Abyss Map" "Colosseum Map" "Core Map" "Dark Forest Map" "Overgrown Ruin Map" "Pit of the Chimera Map" "Lair of the Hydra Map" "Maze of the Minotaur Map" "Forge of the Phoenix Map" "Vaal Temple Map" "Shaped Dunes Map" "Shaped Mesa Map"
+	SetFontSize 45
+	SetBorderColor 0 0 0
+	SetBackgroundColor 255 0 0
+	SetTextColor 0 0 0
+	PlayAlertSound 1 150
+
+#tier 6~10 YELLOWS
+
+Hide
+	Class Maps
+	BaseType "Shaped Jungle Valley Map" "Canyon Map" "Racecourse Map" "Strand Map" "Mud Geyser Map" "Shaped Arid Lake Map" "Shaped Channel Map" "Bog Map" "Cemetery Map" "Atoll Map" "Tropical Island Map" "Shaped Acid Lakes Map" "Coves Map" "Promenade Map" "Reef Map" "Shaped Peninsula Map" "Shaped Primordial Pool Map" "Port Map" "Shaped Spider Lair Map" "Shaped Oasis Map" "Shaped Channel Map" "Shore Map" "Spider Forest Map"
+	SetFontSize 45
+	SetBorderColor 0 0 0
+	SetBackgroundColor 255 255 0
+	SetTextColor 0 0 0
+
+
+
+Hide
+	Class Maps
+	BaseType "Ashen Wood Map" "Arachnid Tomb Map" "Pier Map" "Wharf Map" "Crypt Map" "Thicket Map"  "Overgrown Shrine Map" "Ramparts Map" "Temple Map" "Shaped Arcade Map" "Shaped Crystal Ore Map" "Shaped Desert Map" "Armoury Map" "Quarry Map" "Vaal City Map" "Shaped Factory Map" "Shaped Ghetto Map" "Castle Ruins Map" "Catacombs Map" "Cells Map" "Shaped Cavern Map" "Shaped Grotto Map" "Shaped Marshes Map" "Shaped Sewer Map" "Shaped Vaal Pyramid Map" "Arachnid Nest Map" "Arena Map" "Barrows Map" "Shaped Academy Map" "Shaped Dungeon Map" "Shaped Graveyard Map" "Shaped Phantasmagoria Map" "Shaped Villa Map" "Shaped Waste Pool Map" "Museum Map" "Orchard Map" "Shaped Burial Chambers Map" "Shaped Pit Map" "Shaped Tower Map" "Colonnade Map" "Arsenal Map" "Malformation Map" "Terrace Map" "Underground River Map" "Courtyard Map"
+	SetFontSize 45
+	SetBorderColor 0 0 0
+	SetBackgroundColor 255 255 0
+	SetTextColor 0 0 0
+
+#tier 1~5 WHITE
+Hide
+	Class Maps
+	BaseType "Jungle Valley Map" "Beach Map" "Dunes Map" "Primordial Pool Map" "Graveyard Map"
+	SetFontSize 43
+	SetBorderColor 0 0 0
+	SetBackgroundColor 255 255 255
+	SetTextColor 0 0 0
+
+
+Hide
+	Class Maps
+	BaseType "Arid Lake Map" "Oasis Map" "Acid Lakes Map" "Peninsula Map" "Spider Lair Map" "Arcade Map" "Crystal Ore Map" "Desert Map" "Factory Map" "Ghetto Map" "Cavern Map" "Grotto Map" "Marshes Map" "Sewer Map" "Vaal Pyramid Map" "Academy Map" "Dungeon Map" "Phantasmagoria Map" "Villa Map" "Waste Pool Map" "Burial Chambers Map" "Pit Map" "Tower Map" "Channel Map" "Mesa Map"
+	SetFontSize 43
+	SetBorderColor 0 0 0
+	SetBackgroundColor 255 255 255
+	SetTextColor 0 0 0
+
+
+#new maps
+Show
+	Class Maps
+	SetFontSize 45
+	SetBorderColor 70 200 0
+	SetTextColor 70 200 0
+	PlayAlertSound 1 100
+
+
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#chancing basetypes
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Hide
+	BaseType "Sorcerer Boots"
+	Rarity = Normal
+	SetFontSize 45
+	SetBorderColor 20 224 255
+	SetBackgroundColor 34 34 51
+	SetTextColor 20 224 255
+
+#Show
+#	LinkedSockets >= 4
+#	SetTextColor 255 125 100
+Show
+	BaseType "Leather Belt"
+	Rarity = Normal
+	SetFontSize 43
+	SetBackgroundColor 34 34 51
+	SetBorderColor 20 224 255
+	SetTextColor 20 224 255
+
+#Show
+#	BaseType "Agate Amulet"
+#	Rarity = Normal
+#	SetFontSize 42
+#	SetBackgroundColor 51 204 255
+#	PlayAlertSound 9 100
+#Show
+#	BaseType "Ruby Flask" "Topaz Flask" "Sapphire Flask" "Granite Flask" "Jade Flask" "Diamond Flask"
+#	SetFontSize 38
+#Show
+#	BaseType "Basalt Flask" "Aquamarine Flask" "Stibnite Flask" "Sulphur Flask" "Silver Flask" "Bismuth Flask"
+#	SetFontSize 38
+
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#chromes
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Hide
+#Show
+	SocketGroup RGB
+	SetBorderColor 100 255 255
+	SetFontSize 27
+
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#highest item level or newest base types
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Hide
+	BaseType "Breach Ring"
+	SetBackgroundColor 20 75 20
+Hide
+	BaseType "Hubris Circlet"
+	ItemLevel >= 84
+	SetBackgroundColor 20 75 20
+Hide
+	BaseType "Assassin's Garb" "Zodiac Leather" "Astral Plate" "Glorious Plate" "Triumphant Lamellar" "Vaal Regalia"
+	ItemLevel >= 84
+	SetBackgroundColor 20 75 20
+	SetFontSize 36
+Hide
+	BaseType "Ambusher" "Imperial Skean" "Demon Dagger" "Platinum Kris" "Harbinger Bow" "Imbued Wand" "Vaal Axe"
+	ItemLevel >= 83
+	SetBackgroundColor 20 55 20
+	SetFontSize 36
+Hide
+	BaseType "Sorcerer Glove"
+	ItemLevel >= 84
+	SetBackgroundColor 20 55 20
+	SetFontSize 40
+#Show
+#	BaseType "Assassin's Garb" "Zodiac Leather" "Astral Plate" "Glorious Plate" "Triumphant Lamellar" "Vaal Regalia"
+#	ItemLevel >= 81
+#	SetBackgroundColor 55 55 20
+#	SetFontSize 36
+
+Show
+	BaseType "Steel Ring" "Opal Ring" "Marble Amulet"
+	SetBackgroundColor 20 75 20
+	SetFontSize 45
+	SetBackgroundColor 34 34 51
+  SetTextColor 92	172 238
+
+Hide
+	BaseType "Fingerless Silk Gloves" "Blue Pearl Amulet" "Vanguard Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Crystal Belt"
+	SetBackgroundColor 55 55 20
+	SetFontSize 32
+
+
+Show
+	Class "Gems"
+	BaseType "Portal" "Empower" "Enlighten" "Item Quantity"
+	SetBackgroundColor 34 34 51
+  SetTextColor 92	172 238
+	SetFontSize 45
+	PlayAlertSound 5 200
+Show
+	Class "Gems"
+	Quality >= 19
+	SetFontSize 40
+  SetBackgroundColor 34 34 51
+  SetTextColor 92	172 238
+
+Hide
+	Class "Gems"
+	Quality < 15
+	SetBackgroundColor 34 34 51
+  SetTextColor 92 172 238
+
+Hide
+	Class "Jewel"
+	Rarity = Rare
+	SetFontSize 45
+	SetBackgroundColor 34 34 51
+  SetTextColor 92	172	238
+
+#WOW WOWOW
+#Show
+#	BaseType "Divine Mana Flask"
+#	Quality > 16
+#	SetFontSize 45
+#	SetBackgroundColor 125 125 0 255
+#Show
+Hide
+	Class "Jewel"
+	SetFontSize 45
+	SetBorderColor 125 0 255
+Hide
+#Show
+	Class "Dagger"
+	Rarity = Rare
+	SetFontSize 44
+	SetTextColor 100 255 255
+
+Hide
+	BaseType "Titanium Spirit Shield"
+	Rarity = Rare
+	SetFontSize 45
+	SetTextColor 208 32 144
+	SetBorderColor 208 32 144
+
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#HIDING THINGS
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#Show
+#	BaseType "Quicksilver Flask"
+#	SetFontSize 42
+#	SetBackgroundColor 125 125 200
+#	PlayAlertSound 2 100
+
+Hide
+	Rarity <= Magic
+	Class "Amulets" "Rings" "Claws" "Daggers" "Wands" "Swords" "Axes" "Maces" "Bows" "Staves" "Quivers" "Belts" "Gloves" "Boots" "Armours" "Helmets" "Shields" "Sceptres" "Flask"
+	SetFontSize 19
+	SetBackgroundColor 0 0 0
+
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#rest of shit not listed above
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#CHAOS RECIPE
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#Show
+Hide
+	ItemLevel < 84
+	Class "Belts"
+	SetFontSize 41
+	SetTextColor 0 200 0
+	SetBorderColor 125 255 0
+	SetBackgroundColor 71 55 34
+#Show
+Hide
+	ItemLevel < 84
+	Class "Amulets" "Rings"
+	SetFontSize 41
+	SetTextColor 0 200 0
+	SetBackgroundColor 34 34 51
+        SetTextColor 20 224 255
+Hide
+	ItemLevel < 75
+	Height 4
+	Width 2
+	SetFontSize 30
+	SetBackgroundColor 71 55 34
+	SetBorderColor 255 125 0
+Hide
+	ItemLevel < 75
+	Class "Armour"
+	SetFontSize 32
+	SetBorderColor 255 125 0
+	SetBackgroundColor 71 55 35
+Hide
+	ItemLevel < 75
+	Class "Gloves" "Helm"
+	SetFontSize 36
+	SetBorderColor 51 102 255
+	SetBackgroundColor 71 55 34
+Hide
+	ItemLevel < 75
+	Class "Boots"
+	SetFontSize 36
+	SetBorderColor 51 102 255
+	SetBackgroundColor 71 55 34
+
+Hide
+	ItemLevel < 75
+	SetFontSize 30
+	SetBorderColor 255 125 0
+	SetBackgroundColor 71 55 34
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#REGAL RECIPE
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Hide
+#Show
+	ItemLevel >= 75
+	Class "Amulets" "Rings" "Belts"
+	SetFontSize 40
+	SetBackgroundColor 34 34 51
+        SetTextColor 20 224 255
+#Show
+#	ItemLevel >= 75
+#	Height 4
+#	Width 2
+#	SetFontSize 30
+#	SetBackgroundColor 51 132 200
+#Show
+#	ItemLevel >= 755
+#	Height 2
+#	Width 2
+#	SetFontSize 40
+#	SetBorderColor 51 102 255
+#	SetBackgroundColor 51 132 200
+#Show
+#	ItemLevel >= 75
+#	SetFontSize 36
+#	SetBorderColor 255 125 0
+#	SetBackgroundColor 51 132 200
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#Showing everything else
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Hide
+#Show
+	Class "Amulets" "Rings"
+	SetFontSize 40
+	SetBackgroundColor 34 34 51
+        SetTextColor 20 224 255
+#Hide
+Show
+	Class "Belts"
+	SetFontSize 40
+#	SetBorderColor 125 255 0
+	SetTextColor 0 255 0
+
+Hide
+	Class "Two Hand" "Bows" "Staves" "Claws" "Swords" "Shields" "Wands" "Quivers" "Sceptres" "Maces" "Axes"
+	SetFontSize 30
+	SetBorderColor 255 125 0
+Hide
+	Class "Armour"
+	SetFontSize 30
+	SetBorderColor 255 125 0
+Hide
+	Class "Boots"
+	SetFontSize 34
+	SetBorderColor 51 102 255
+Hide
+	Class "Gloves" "Helm"
+	SetFontSize 34
+	SetBorderColor 51 102 255
+
+Show
+	SetFontSize 25
+#	SetBorderColor 255 125 0
